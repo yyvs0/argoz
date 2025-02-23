@@ -17,4 +17,4 @@ spec:
       - name: apache
         image: docker.io/library/httpd:2.4
         ports:
-        - containerPort: 80
+        - containerPort: 8080
