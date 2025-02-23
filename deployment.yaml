@@ -16,6 +16,5 @@ spec:
       containers:
       - name: apache
         image: registry.redhat.io/ubi9/httpd-24
-
         ports:
         - containerPort: 8080
