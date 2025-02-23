@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dig-job
+  namespace: yytest  # Namespace belirttik
+spec:
+  template:
+    spec:
+      containers:
+      - name: dig
+        image: docker.io/library/busybox:latest
+        command: ["sh", "-c", "sleep 30 && dig google.com"]
+      restartPolicy: Never
