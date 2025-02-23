@@ -9,5 +9,5 @@ spec:
       containers:
       - name: dig
         image: docker.io/library/busybox:latest
-        command: ["sh", "-c", "sleep 30 && dig google.com"]
+        command: ["sh", "-c", "sleep 30 && echo TEST"]
       restartPolicy: Never
